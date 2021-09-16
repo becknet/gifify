@@ -18,7 +18,10 @@ Der Container bietet die Möglichkeit, aus einem Film einen Ausschnitt in ein an
 ```docker build -t [Container Name]```
 
 ### Container ausführen
-```docker run -v $(pwd):/data [Input Filename] -o [Output Filename.gif]```
+```docker run -v $(pwd):/data [input] -o [output.gif]```
+- $(pwd):/data mapt das aktuelle Verzeichnis nach /data im Container
+- [input]: Video-File
+- [output.gif] generiertes GIF im aktuellen Verzeichnis
 
 ### weitere Parameter
 ```
