@@ -15,13 +15,13 @@ Der Container bietet die Möglichkeit, aus einem Film einen Ausschnitt in ein an
 - gifify
 
 ### Image erstellen
-'''docker build -t [Container Name]'''
+```docker build -t [Container Name]```
 
 ### Container ausführen
-'''docker run -v $(pwd):/data [Input Filename] -o [Output Filename.gif]'''
+```docker run -v $(pwd):/data [Input Filename] -o [Output Filename.gif]```
 
 ### weitere Parameter
-'''
+```
 -h, --help              output usage information
 -V, --version           output the version number
 --colors <n>            Number of colors, up to 255, defaults to 80
@@ -36,7 +36,7 @@ Der Container bietet die Möglichkeit, aus einem Film einen Ausschnitt in ein an
 --text <string>         Add some text at the bottom of the movie
 --to <position>         Seconds, defaults to end of movie
 --no-loop               Will show every frame once without looping
-'''
+```
 
 ### bekannte Probleme
 Hat das Video eine zu grosse Auflösung, kann es im Container zu einem Speicherüberlauf kommen
