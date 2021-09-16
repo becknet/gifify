@@ -12,16 +12,16 @@ Der Container bietet die Möglichkeit, aus einem Film einen Ausschnitt in ein an
 - node.js
 - npm
 - gfsicle (https://github.com/pornel/giflossy/releases/download/lossy%2F1.82.1/gifsicle-1.82.1-lossy.zip)
-- gifify
+- gifify 
 
 ### Image erstellen
-```docker build -t [Container Name]```
+```docker build -t [containerName]```
 
 ### Container ausführen
-```docker run -v $(pwd):/data [input] -o [output.gif]```
+```docker run -v $(pwd):/data [containerName] [input] -o [output.gif]```
 - $(pwd):/data mapt das aktuelle Verzeichnis nach /data im Container
-- [input]: Video-File
-- [output.gif] generiertes GIF im aktuellen Verzeichnis
+- [ input ]: Video-File
+- [ output.gif ] generiertes GIF im aktuellen Verzeichnis
 
 ### weitere Parameter
 ```
@@ -43,6 +43,6 @@ Der Container bietet die Möglichkeit, aus einem Film einen Ausschnitt in ein an
 
 ### bekannte Probleme
 Hat das Video eine zu grosse Auflösung, kann es im Container zu einem Speicherüberlauf kommen
---resize behebt dieses Problem.
+```--resize``` behebt dieses Problem.
 
 
