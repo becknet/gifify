@@ -1,10 +1,8 @@
-FROM ubuntu:latest
+FROM alpine:latest
 
 # install Software 
-RUN apt-get update
-RUN apt-get -y install software-properties-common
-RUN apt-get update
-RUN apt-get -y install ffmpeg unzip imagemagick curl nodejs npm dh-autoreconf
+RUN apk update
+RUN apk add ffmpeg unzip imagemagick curl nodejs npm
 
 # install fork of gifsicle with better lossless gif support
 RUN curl -OJL https://github.com/pornel/giflossy/releases/download/lossy%2F1.82.1/gifsicle-1.82.1-lossy.zip
