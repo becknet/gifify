@@ -6,7 +6,7 @@
 Der Container bietet die Möglichkeit, aus einem Film einen Ausschnitt in ein animierters GIF umzuwandeln.
 
 ### verwendete Software
-- ubuntu:latest
+- alpine:latest
 - ffmpeg
 - imageMagick
 - node.js
